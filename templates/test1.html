@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-float.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800i" rel="stylesheet">
+  <link href='css/styles.css' rel="stylesheet" type="text/css">
+	<style>
+	   header{
+	       background-color:#4c4c4c;
+	       height:10px;
+	       width:100%;
+	       top:0;
+	       position:fixed;
+	       }
+	   footer{
+	       background-color:#cd6772;
+	       width:100%;
+	       height: 20px;
+	       bottom:0;
+	       right:0px;
+	       position:fixed;
+	     }
+	   h1 {
+	     color: #1779ba;
+	     font-family: Montserrat;
+         font-size: 300%;
+       }
+	</style>
+</head>
+<body>
+	<header>
+		<span style="font-size: 6px;">..</span>
+	</header><br>
+	<div align="center" class="form-wrapper">
+    <nav class="header">			
+    <hr>
+		</nav>{% block content %} {% endblock %}
+	</div>
+	<footer>
+		<span style="font-size: 14px;">&nbsp; &copy; 2018 Ryan More</span>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+      <div class="single-user">
+
+        <h2>USER POSTS</h2>
+
+        <hr>
+        {% for entry in entries %}
+        <div class="post">
+
+          <a href="/blog?id={{entry.id}}"><h1>{{ entry.title }}</h1></a>
+          <p class="body-text">{{ entry.body }}</p>
+          <p class="pub-date">Posted on: {{ entry.pub_date }}</p>
+          <p class="user">Posted by: <a href="/blog?userid={{entry.owner_id}}">{{ entry.owner.username }}</a></p>
+
+        </div>
+        {% endfor %}
+      </div>
+{% endblock %}
